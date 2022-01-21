@@ -26,5 +26,16 @@ function addListAfterEnter(event) {
 }
 
 button.addEventListener("click", addListAfterClick);
-
 item.addEventListener("keypress", addListAfterEnter);
+
+
+// My Task
+let li = document.querySelectorAll("li");
+function lineThrough() {
+	for (let i = 0; i < li.length; i++) {
+		li[i].addEventListener("click", function () {
+			li[i].classList.toggle("done");
+		});
+	}
+}
+lineThroughb();
